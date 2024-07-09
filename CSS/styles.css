@@ -1,15 +1,12 @@
 body{
-    background-color:black;
-
-    background-color: black;
+    background-color:aliceblue;
 }
 
 header{
     width:20%;
     font-family: cursive;
     float: left;
-    background-image: url("/images/pexels-pixabay-270348.jpg") no repeat center center fixed;
-
+    
 }
 header img{
     height: 100px;
@@ -18,52 +15,69 @@ header img{
 
 
 nav{
-    width:75%;
-    height: 25%;
     width:75%; 
     float: right;
-    margin: 20em 4em 0 0;
-
     margin: 0em 4em 0 0;
     height: 100px;
     /*background-image: url("http://127.0.0.1:5500/images/pexels-pixabay-270348.jpg");*/
 }
 
 main{
-@@ -24,9 +28,11 @@ main{
-    background-image: url("\images\pexels-nataliya-vaitkevich-6120212.jpg");
+    clear: right;
+    background-color:bisque;
+    
     padding: 2%;
     font-size: 1.5em;
     border-radius: 10px;
 
 }
-
-
+.prac{
+    background-color: #D7263D;
+}
 nav ul{
     list-style-type: none;
     margin:0;
-@@ -42,9 +48,15 @@ nav ul li a{
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 1.75em;
+}
+
+nav ul li a{
     display: block;
     color: white;
     text-align: center;
-    padding: 1em 1em 0.5em 1em;
     padding: 0.5em 1em 0.5em 1em;
     text-decoration: none;
-
+    
 }
 nav ul li a:hover {
-
+    
     text-decoration: underline;
+    
 
   }
 
 footer p{
     font-size: 1em;
-@@ -61,3 +73,40 @@ footer p a{
+    text-align: center;
+    color:rgb(160, 27, 27);
+    padding: 0 1em;
+}
+
+
+footer p a{
+    color: rgb(133, 19, 19);
+    text-decoration:double;
+}
 #image1{
     height: 6%;
 }
-
+#container{
+    border-radius: 30px;
+}
 .grid-container{
 display: grid;
 grid-template-columns: 50% 50% ;  /* it specify the size of each column */
@@ -87,10 +101,10 @@ grid-template-columns: 50% 50% ;  /* it specify the size of each column */
     /* padding-block: initial; */
     padding: 3em;
     FONT-WEIGHT: 100;
-
+    
     border: dotted;
 }
-table, th ,td{
+table th ,td{
     border: 1px solid black;
     padding: 1em;
 }
@@ -98,3 +112,77 @@ ul.bot {
     display: inline-flex;
     text-size-adjust: auto;
 }
+.conta {
+    
+    margin : 25px 0;
+    
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0,0 ,0.15);
+    font-size: 0.9em;
+    border-bottom-style: solid;
+}
+.conta tr{
+    background-color: #03F7EB;
+    color: #EF3054;
+    text-align:  left ;
+    font-weight:  bold;
+}
+.conta th,
+.conta td {
+    padding : 12px 15px;
+}
+.conta tr{
+    border-bottom: 1px solid #dddddd;
+
+}
+.conta tr  :nth-of-type(2) {
+    background-color: #191516;
+}
+.conta tr :last-of-type{
+    border-bottom: 2px solid #009879;
+}
+
+table tr td a{
+    color: azure;
+}
+.accordion {
+    background-color: #83030D; /* Green background */
+    border: 1px solid ; /* Green border */
+    color: rgb(248, 236, 236); /* White text */
+    padding: 10px 2px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 20%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    border-radius: 10px;
+}
+  
+  .accordion :not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .accordion :hover {
+    background-color: 038277;
+  }
+  .container{
+    width:500px;
+    overflow-x: auto;
+  }
+  .language{
+    color:antiquewhite;
+    background-color: black;
+    padding:12px 16px;
+    border-radius: 5px 5px 0 0;
+    text-decoration: solid;
+    text-align:start;
+
+  }
+  
+  .code-wrapper pre{
+    background-color: #191516;
+    color:aliceblue;
+    padding:8px 20px;
+    border-radius: 0 0 5px 5px;
+  }
